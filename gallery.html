@@ -4,13 +4,19 @@
     <meta charset="utf-8"/>
     <title>Image Gallery</title>
 </head>
+<script type="text/javascript" src="js/showPic.js"></script>
 <body>
 <h1>Snapshots</h1>
 <ul>
-    <li><a href="./img/fireworks.jpg" title="A fireworks display">Fireworks</a></li>
-    <li><a href="./img/coffee.png" title="A cup of black coffee">Coffee</a></li>
-    <li><a href="./img/rose.jpg" title="A red, red rose">Roses</a></li>
-    <li><a href="./img/bigben.gif" title="The famous clock">Big Ben</a></li>
+    <li><a href="./img/fireworks.jpg" onclick="showPic(this); return false" title="A fireworks display">Fireworks</a></li>
+    <li><a href="./img/coffee.png" onclick="showPic(this); return false" title="A cup of black coffee">Coffee</a></li>
+    <li><a href="./img/rose.jpg" onclick="showPic(this); return false" title="A red, red rose">Roses</a></li>
+    <li><a href="./img/bigben.gif" onclick="showPic(this); return false" title="The famous clock">Big Ben</a></li>
+    <!--<li><a href="http://www.example.com" onclick="return false">Click me</a></li>
+    // Just to prove that return false could influence the result-->
 </ul>
+<img id="placeholder" src="./img/placeholder.gif" alt="my image gallery"/>
+<p id="description">Choose an image.</p>
+<script type="text/javascript" src="./js/showPic.js"></script>
 </body>
 </html>
