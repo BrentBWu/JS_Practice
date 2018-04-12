@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Image Gallery</title>
+    <link rel="stylesheet" href="css/layout.css" media="screen" />
 </head>
 <script type="text/javascript" src="js/showPic.js"></script>
 <body>
@@ -11,7 +12,7 @@
     <li><a href="./img/fireworks.jpg" onclick="showPic(this); return false" title="A fireworks display">Fireworks</a></li>
     <li><a href="./img/coffee.png" onclick="showPic(this); return false" title="A cup of black coffee">Coffee</a></li>
     <li><a href="./img/rose.jpg" onclick="showPic(this); return false" title="A red, red rose">Roses</a></li>
-    <li><a href="./img/bigben.gif" onclick="showPic(this); return false" title="The famous clock">Big Ben</a></li>
+    <li><a href="./img/bigben.gif" onclick="showPic(this); return false" onmouseleave="popUp(this.href); return false" title="The famous clock">Big Ben</a></li>
     <!--<li><a href="http://www.example.com" onclick="return false">Click me</a></li>
     // Just to prove that return false could influence the result-->
 </ul>
